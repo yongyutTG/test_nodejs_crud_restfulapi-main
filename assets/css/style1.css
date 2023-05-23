@@ -1,0 +1,212 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+    #form {
+        width: 400px;
+    }
+}
+
+@-webkit-keyframes animatebottom {
+    0% {
+        opacity: 0;
+        margin-top: 500px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes animatebottom {
+    0% {
+        opacity: 0;
+        margin-top: 500px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+input {
+    color: rgb(8, 8, 8);
+    margin: 5px;
+    border-radius: 0px;
+    border: 0px solid rgb(5, 5, 5);
+    padding: 8px;
+    background: rgb(239, 239, 239);
+    transition-duration: .5s;
+}
+
+Input:Focus {
+    border-radius: 50px;
+    background-color: #ccc;
+    color: rgb(9, 9, 9);
+}
+
+a {
+    text-decoration: none!important;
+    color: #fff;
+}
+
+hr {
+    border: 2px solid #c1c1c1;
+}
+
+button {
+    cursor: hand;
+    border: none;
+    background: #27a5df;
+    color: white;
+    padding: 11px 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition-duration: .1s;
+}
+
+Button:active {
+    background-color: #555;
+}
+
+* {
+    outline: none;
+    user-select: none;
+}
+
+H1 {
+    font-size: 8px;
+    width: 100%;
+    color: rgb(136, 136, 136);
+}
+
+#form {
+    outline: 15px solid #4bbaed;
+    margin: 20px;
+    border-radius: 100px;
+    text-align: -webkit-center;
+    background: rgb(255, 255, 255);
+    /* padding: 30px 10px; */
+    border-top: 30px solid #27a5df;
+    border-bottom: 30px solid #27a5df;
+    box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.5);
+    /* Border: none; */
+    outline: none;
+    animation: animatebottom 1s cubic-bezier(1, -0.06, 0.26, 1.06);
+    margin: 1.1em auto;
+    align-items: center;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: url(bg.jpg);
+    background-attachment: fixed;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    padding: 10px;
+    margin: 0;
+    color: #888;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    text-align: -webkit-center;
+}
+
+.login-link {
+    text-align: light;
+    margin-top: 0px;
+    font-size: 15px;
+    color: #0b0607;
+}
+
+.signup-link {
+    text-align: light;
+    margin-top: 0px;
+    font-size: 15px;
+    color: #0b0607;
+}
+
+
+/* .modal .modal-content { */
+
+.modal-content {
+    outline: 15px solid #4bbaed;
+    border-radius: 10px;
+    text-align: -webkit-center;
+    /* padding: 3px 10px; */
+    /* background: url(./bg.jpg); */
+    background: rgb(104, 14, 14);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-body {
+    border-radius: 1px;
+    display: block;
+    background: rgb(185, 188, 190);
+    /* width: 100%; */
+    /* padding: 8px; */
+    font-size: 17px;
+    text-align: left;
+    color: rgb(14, 13, 13);
+}
+
+
+/* Changed footer - August 2020 */
+
+footer {
+    padding: 15px 15px;
+    width: 80%;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    text-align: -webkit-center;
+    color: #fff!important;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* header h1 {
+    width: 90%;
+    Border: 5px dotted #27a5df;
+    color: #27a5df;
+    text-align: -webkit-center;
+    border-radius: 5px;
+} */
+
+
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+.form-group input:focus {
+    outline: none;
+}
+
+.form-group.error input {
+    border-color: var(--error-color);
+}
+
+.form-group.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-group small {
+    color: var(--error-color);
+}

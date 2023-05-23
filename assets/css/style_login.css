@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    padding: 20px 20px;
+}
+
+.container a {
+    background-color: #3194ee;
+    color: #f5f5f5;
+    width: 90%;
+    -webkit-box-shadow: 0 0.6em #24629b;
+    box-shadow: 0 0.6em #24629b;
+    margin: 1.1em auto;
+}
+
+body {
+    background: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    background-color: #fff;
+}
+
+.form-group input {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 1px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: 0;
+    border-color: rgb(149, 199, 240);
+}
+
+
+/* .form button {
+        cursor: pointer;
+        background-color: #3498db;
+        color: #fff;
+        border: 2px solid #3498db;
+        margin-top: 20px;
+        width: 100%;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+    }
+     */
+
+.btn_login {
+    /* background-color: #3498db; */
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    /* font-size: 16px;
+    padding: 10px; */
+}
+
+.forget_password-link {
+    text-align: light;
+    margin-top: 0px;
+    font-size: 15px;
+    color: #0b0607;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 15px;
+    color: #0b0607;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background-color: rgb(5, 5, 5);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 50px;
+    width: 136px;
+    outline: none;
+    border-radius: 24px;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background-color: rgb(5, 5, 5);
+}
