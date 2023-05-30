@@ -21,12 +21,14 @@ function goto_login() {
         // $("#input_username").css("border", " 1px solid red ");
         document.getElementById("input_username").focus();
         return false
+
     } else if (check_password.length <= 0 || (check_password == "")){
         $(error_msg_login).show();
         error_msg_login.html("กรุณากรอก Password").css("color", "red")
         $("#input_password").css("border", " 1px solid red ");
         document.getElementById("input_password").focus();
         return false
+        
     } else {
         $("#input_username").css("border", "unset");
         $("#input_password").css("border", "unset");

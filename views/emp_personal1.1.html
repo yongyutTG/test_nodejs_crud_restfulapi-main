@@ -51,6 +51,15 @@
                 <!-- <h3>ประวัติส่วนตัว</h3>
                 <p class="blue-text">ประวัติส่วนตัว</p> -->
                 <div class="card">
+
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="text-center">Center aligned text on all viewport sizes.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                      
                     <h5 class="text-center mb-4">ประวัติส่วนตัว</h5>
                     <form class="form-card" onsubmit="event.preventDefault()">
                         <div class="row justify-content-between text-left">
@@ -71,6 +80,8 @@
                             <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">บันทึกข้อมูล</button> </div>
                         </div>
                     </form>
+
+
                 </div>
             </div>
         </div>
@@ -205,6 +216,9 @@
                         </li>
                     </ul>
                 </div>
+
+                
+                
             </div>
         </nav>
     </section>
@@ -281,10 +295,10 @@
                 document.getElementById("txt_show_salary").innerHTML = data[0].salary 
                 document.getElementById("txt_show_email").innerHTML = data[0].email 
             } else {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'ไม่พบข้อมูล!'
-                    })
+                    // Swal.fire({
+                    //     icon: 'error',
+                    //     title: 'ไม่พบข้อมูล!'
+                    // })
                 }
             
         }, error: (err) => {
