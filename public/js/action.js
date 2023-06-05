@@ -6,6 +6,7 @@ window.addEventListener("load", (e)=>{
 })
 
 // ------------------------------code funtion หน้า login 
+ 
 function goto_login() { 
     const error_msg_login = $("#error_msg_login");
     $(error_msg_login).hide();
@@ -18,7 +19,7 @@ function goto_login() {
     if (check_username.length <= 0 || (check_username == null )){
         $(error_msg_login).show();
         error_msg_login.html("กรุณากรอก Username").css("color", "red")
-        // $("#input_username").css("border", " 1px solid red ");
+        $("#input_username").css("border", " 1px solid red ");
         document.getElementById("input_username").focus();
         return false
 
@@ -32,14 +33,6 @@ function goto_login() {
     } else {
         $("#input_username").css("border", "unset");
         $("#input_password").css("border", "unset");
-        console.log(" login Request ");
-
-        // var md5 = require('md5');
-
-        // var hash = md5(check_password);
-
-        // console.log(hash); // 8ba6c19dc1def5702ff5acbf2aeea5aa
-
         $.ajax({
             method: 'post',
             url: 'http://localhost:3000/api/login',
@@ -56,8 +49,8 @@ function goto_login() {
                 localStorage.setItem('lname', response.Result_lname)   
                 localStorage.setItem('dept', response.Result_dept_name)   
 
-                //  window.location.href = './views/page.html'
-                 window.location.href = './views/emp_personal1.html'
+                window.location.href = './views/page.html'
+                //  window.location.href = './views/emp_personal1.html'
                  
                 } else if (response.RespCode == 400) {
                     Swal.fire({
@@ -72,7 +65,12 @@ function goto_login() {
             }
         })
     }
+    var form = document.getElementById("myForm");
+    form.submit();
 }
+
+
+
 
 function goto_register(){
     const error_msg_register = $("#error_msg_register");

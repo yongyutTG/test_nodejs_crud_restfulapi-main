@@ -38,7 +38,7 @@ input {
     color: rgb(8, 8, 8);
     margin: 5px;
     border-radius: 0px;
-    border: 0px solid rgb(5, 5, 5);
+    border: 0px solid rgb(143, 194, 245);
     padding: 8px;
     background: rgb(239, 239, 239);
     transition-duration: .5s;
@@ -53,7 +53,7 @@ Input:Focus {
 
 
 
-button {
+/* button {
     cursor: pointer;
     border: none;
     background: #27a5df;
@@ -62,10 +62,10 @@ button {
     border-radius: 5px;
     font-size: 16px;
     transition-duration: .1s;
-}
+} */
 
 Button:active {
-    background-color: #9e9999;
+    background-color: #961212;
 }
 
 * {
