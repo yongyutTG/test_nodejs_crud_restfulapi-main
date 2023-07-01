@@ -39,10 +39,6 @@ db.connect(function(err) {
 });
 
 
-
-
-
-
 // *********************login************************
 app.post('/api/login', (req, res) => {
     const login_username = req.body.data_login_username;
@@ -155,15 +151,9 @@ app.post('/api/create_signup', (req, res) => {
 
 
 // *********************show data *******************************
-
-
 //app.get('/api/show_member/:empid', (req, res) => {
-    app.get('/api/show_member/', (req, res) => {
-   // 
-  
+app.get('/api/show_member/', (req, res) => {
     let empid = req.query.empid
-    //var empid = _.get(req, ["body", "empid"]);
-
     try {
         if(empid) {
             db.query('select * from employee where empid = ?', [

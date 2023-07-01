@@ -49,7 +49,7 @@ function goto_login() {
                 localStorage.setItem('lname', response.Result_lname)   
                 localStorage.setItem('dept', response.Result_dept_name)   
 
-                window.location.href = './views/page.html'
+                window.location.href = './views/profile.html'
                 //  window.location.href = './views/emp_personal1.html'
                  
                 } else if (response.RespCode == 400) {

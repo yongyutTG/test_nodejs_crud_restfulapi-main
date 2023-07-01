@@ -10,6 +10,7 @@
 
     <link rel="shortcut icon" href="images/" type="image/x-icon">
     <!-- css -->
+    <!-- <link rel="stylesheet" href="../assets/css/style_login_t1.css"> -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
@@ -18,13 +19,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    
     <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 <body>
     <section class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#"  style="font-size: 16px;padding: 0px 6px 0px 120px;color: rgb(11, 11, 11); ">
+                <a class="navbar-brand" href="#"  style="font-size: 16px;padding: 0px 6px 0px 50px;color: rgb(11, 11, 11); ">
                     <img src="../public/images/logo_member.png" width="30" height="30" >
                     ยินดีต้อนรับ  </a>
                   </a>
@@ -37,21 +38,20 @@
                             <a class="nav-link" id="txt_show_top"></a>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" id="txt_test"></a> -->
-                            <a class="nav-link" href="product">ข้อมูลส่วนตัว</a>
+                            <a class="nav-link" href="profile.html">ข้อมูลส่วนตัว</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="product">ข้อมูลการทำงาน</a>
+                            <a class="nav-link" href="information.html">ข้อมูลการทำงาน</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="product">ประวัติการลา</a>
+                            <a class="nav-link" href="record_leave.html">ประวัติการลา</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index#about">สิทธิการลา</a>     
+                            <a class="nav-link" href="leave.html">สิทธิการลา</a>     
                         </li>
                         <li class="nav-item">
                         
-                            <a class="nav-link" href="index#contact">ติดต่อเรา</a>
+                            <a class="nav-link" href="contact.html">ติดต่อเรา</a>
                         </li>
                         <li>
                            <a onclick="gotologout()" style="padding: 6px 24px;" class="btn btn-outline-danger"><img src="../images/logo/close.png" width="24"> ออกจากระบบ</a>
@@ -59,24 +59,10 @@
                         </li>
                     </ul>
                 </div>
-                
             </div>
         </nav>
     </section>
-
    
-
-    <style>
-        footer{
-            background:#000;
-            padding: 10px 0;
-            text-align: center;
-            color: #fff;
-        }
-        footer p{
-            margin:0;
-        }
-    </style>
         <!--Funtion ปุ่มเลื่อนขึ้นลง -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 
@@ -132,43 +118,25 @@
                     <div class="card bg-light">
                         <div class="card-body text-center">  
                             <div class="container mt-5">
-                                <div class="d-flex justify-content-between">
-                                    <h1>ประวัติการลาทั้งหมด</h1>
-                           
+                                <div class="d-flex justify-content-between">                     
                                     <button class="btn btn-outline-success " data-bs-toggle="modal" data-bs-target="#modaladd">
                                         + เพิ่มการลา
                                     </button>
-                                </div>
-                                <!-- <a class="nav-link" id="txt_test"></a> -->
-                                
-                             <!-- Show data Member                                    -->
-                                <label>
-                                    <!-- ชื่อ - สกุล: <a type="text" id="txt_test"</a> -->
-                                        <!-- <button type="button" class="btn btn-light" id="txt_test"</button> -->
-                                </label>
-                               
-                                <div class="card border-info mb-3" >
-                                    <div class="card-header">ข้อมูลการทำงาน</div>
-                                        <!-- <div class="card-body text-info"> -->
-                                                <!-- <h5 class="card-title">ข้อมูลการทำงาน</h5> -->
-                                            <!-- ชื่อ - สกุล: <a type="text" id="txt_test"</a> -->
-                                            <!-- <p type="text" id= "txt_show_dept"</p></a> -->
-
-                                                <a><p class="text-uppercase" id = "txt_test"</p></a>
-                                            <a><p class="text-uppercase" id = "txt_show_salary"</p></a>
-                                            <a><p class="text-lowercase" id= "txt_show_email"</p></a>
-                                                
-                                            <a><p class="text-lowercase" id= "txt_show_dept"</p></a>
-                
-                                    <!-- </div> -->
+                                </div> 
+        
+                                <div class="card">
+                                    <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                                        ข้อมูลการทำงาน
+                                    </div>
+                                    <div class="card-body">
+                                      <!-- <h5 class="card-title">ข้อมูลการทำงาน</h5> -->
+                                       <a><p class="text-center" id = "txt_test"</p></a>
+                                        <a><p class="text-center" id = "txt_show_salary"</p></a>
+                                        <a><p class="text-center" id= "txt_show_email"</p></a>
+                                        <a><p class="text-center" id= "txt_show_dept"</p></a>
+                                    </div>
                                   </div>
-                                  <span class="border">fdfdfdfd</span>
-                                  <!-- <span class="border-top">zzzzzzzzzzzzzz</span>
-                                  <span class="border-right">xxxxxxxxxx</span>
-                                  <span class="border-bottom">cccccccccccc</span>
-                                  <span class="border-left">vvvvvvvvvvvvvvv</span> -->
 
-                                
                                 <table class="table">
                                     <thead>
                                       <tr>
@@ -254,11 +222,11 @@
             if(response.RespCode == 200) {
                 data = response.Result;
                 // document.getElementById("txt_test").innerHTML =" นาย "+localStorage.fname + " "+localStorage.lname;
-                document.getElementById("txt_test").innerHTML =" คุณ "+ data[0].fname + " "+data[0].lname
-                document.getElementById("txt_show_top").innerHTML =" คุณ "+ data[0].fname + " "+data[0].lname
-                document.getElementById("txt_show_dept").innerHTML = data[0].dept 
-                document.getElementById("txt_show_salary").innerHTML = data[0].salary 
-                document.getElementById("txt_show_email").innerHTML = data[0].email 
+                document.getElementById("txt_test").innerHTML =" คุณ : "+ data[0].fname + " "+data[0].lname
+                document.getElementById("txt_show_top").innerHTML =" คุณ : "+ data[0].fname + " "+data[0].lname
+                document.getElementById("txt_show_dept").innerHTML =  "ฝ่าย/แผนก/ส่วนงาน : " + data[0].dept 
+                document.getElementById("txt_show_salary").innerHTML = "อัตราค่าจ้างเงินเดือน : " + data[0].salary 
+                document.getElementById("txt_show_email").innerHTML = "อีเมล์ที่ติดต่อ : "+ data[0].email 
             } else {
                     Swal.fire({
                         icon: 'error',
